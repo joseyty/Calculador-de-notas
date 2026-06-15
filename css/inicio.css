@@ -1,28 +1,30 @@
 body{
-    background-color: rgb(165, 81, 42);
-    overflow-y: scroll;
-    scrollbar-width: none;
-
+    background-color: rgb(76, 175, 80);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+    min-height: 100vh;
 }
 
 
-body::-webkit-scrollbar{
-    display: none;
-}
+
 
 
 
 
 .container{
-    width: 550px;
-    height: 350px;
-    background-color: rgb(95, 62, 13);
+    width: 700px;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50px;
-    margin-left: 670px;
-    margin-top: 300px;
+    flex-shrink: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -39,15 +41,50 @@ body::-webkit-scrollbar{
     border-radius: 50px;
     position: relative;
     font-size: 20px;
-
     width: 200px;
     height: 30px;
+    background-color: rgb(76, 175, 80);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
 }
 
 .mid,.ni{
-     min-height: 20px;
-      text-align: center;
-   
+    min-height: 20px;
+    text-align: center;
+    color: rgb(33, 150, 34);
+    font-weight: bold;
+}
+
+input[type="number"]{
+    width: 250px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid rgb(76, 175, 80);
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: white;
+    color: rgb(33, 150, 34);
+}
+
+input[type="number"]:focus{
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+label{
+    color: rgb(33, 150, 34);
+    font-weight: bold;
+    font-size: 16px;
+}
+.img{
+  
+    width: 900px;
+    height: auto;
+    flex-shrink: 0;
+    margin-left: auto;
+    margin-right: 20px;
 }
 
 
@@ -59,14 +96,15 @@ body::-webkit-scrollbar{
 @keyframes alterar{
     0%{
        transform: scale(1);
-        color: rgb(255, 255, 255);
+        color: rgb(173, 207, 181);
     }
     50%{
         transform: scale(1.1);
         
-        color: rgb(0, 0, 0);}
+        color: rgb(0, 0, 0);
+    background-color: rgb(206, 205, 205);}
     100%{     
         transform: scale(1);
-           background-color: azure;
+           background-color: rgb(9, 179, 79);
         }
 }

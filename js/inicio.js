@@ -5,13 +5,12 @@ function clicarButton() {
     let media = (nota1 + nota2) / 2;
     document.getElementById("nana").textContent = "media  : " + media;
      
-    if(media<7){
+    if (media < 7) {
          document.getElementById("nana").style.color = "red";
-    } else if(media===7){
+    } else if (media === 7) {
          document.getElementById("nana").style.color = "orange";
-    } if(media>7){
+    } else if (media > 7) {
          document.getElementById("nana").style.color = "green";
-
     }
 
 
@@ -24,7 +23,7 @@ function clicarButton() {
         let reprovado = " não passou";
         document.getElementById("nina").textContent = reprovado;
         document.getElementById("nina").style.color = "red";
-    } else{
+    } else {
         let passou = "você passou";
         document.getElementById("nina").textContent = passou;
         document.getElementById("nina").style.color = "blue";
@@ -57,10 +56,5 @@ function clearMessagesOnInput() {
 document.getElementById("nota1").addEventListener("input", clearMessagesOnInput);
 document.getElementById("nota2").addEventListener("input", clearMessagesOnInput);
 
-function testeButton() {
-    let sucesso = "funcionou";
-    document.getElementById("teste").textContent = sucesso;
-    document.getElementById("teste").style.color = "blue";
-}
 
 // Ate aqui
