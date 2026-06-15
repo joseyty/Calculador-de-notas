@@ -1,27 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/inicio.css">
     <title>Document</title>
 </head>
 <body>
-      <div class="calculator">
-        <label for="nota1">Nota 1:</label>
+      <div class="container">
+        <div class="card">
+
+  <label for="nota1">Nota 1:</label>
         <input id="nota1" type="number" step="any" placeholder="Digite a primeira nota">
+        <br>
 
         <label for="nota2">Nota 2:</label>
         <input id="nota2" type="number" step="any" placeholder="Digite a segunda nota">
-
-        <button type="button" onclick="clicarButton()">Calcular média</button>
-    </div>
-
-    <p id="nano"></p>
-    <p id="nana"></p>
-    <br>
-    <button onclick="testeButton()">clique aqui</button>
+            <p id="nina" class="ni"></p>
+            <br>
+               <p class="mid" id="nano"></p>
+               <!--estudar essa parte1-->
+        <div style="display:flex;gap:10px;align-items:center;">
+          <!--estudar essa parte1-->
+        <button class="bit alterar" type="button" onclick="clicarButton()">Calcular média</button>
+        <!-- estudar essa parte2-->
+        <button class="bit alterar" type="button" onclick="clearFields()">Limpar</button>
+        <!--estudar essa parte2-->
+        </div>
+        <p id="nana" class="mid"></p>
+        </div>
+       
+      </div>
+      <br>
+    <button onclick="testeButton()">Teste</button>
 
     <p id="teste">olhe aqui</p>
-  <script src="../Calculador-de-notas/js/inicio.j"></script>
+  <script src="js/inicio.js"></script>
 </body>
 </html>
